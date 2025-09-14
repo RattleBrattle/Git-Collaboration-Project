@@ -12,8 +12,12 @@ int main() {
             result = add(num1, num2);
             cout << "Result: " << result << endl;
             break;
-        case'-':
+        case '-':
             result = sub(num1, num2);
+            cout << "Result: " << result << endl;
+            break;
+        case '*':
+            result = multiply(num1, num2);
             cout << "Result: " << result << endl;
             break;
         default:
@@ -30,3 +34,6 @@ int sub(int x, int y) {
     return x - y;
 }
 
+int multiply(int a, int b) {
+    return a * b;
+}
