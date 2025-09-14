@@ -20,6 +20,14 @@ int main() {
             result = multiply(num1, num2);
             cout << "Result: " << result << endl;
             break;
+        case '/':
+            if (num2 != 0) {
+                result = div(num1, num2);
+                cout << "Result: " << result << endl;
+            } else {
+                cout << "Error: Division by zero." << endl;
+            }
+            break;
         default:
             cout << "Unsupported operation." << endl;
             break;
@@ -36,4 +44,7 @@ int sub(int x, int y) {
 
 int multiply(int a, int b) {
     return a * b;
+}
+int div(int a, int b) {
+    return a / b;
 }
