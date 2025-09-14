@@ -12,6 +12,10 @@ int main() {
             result = add(num1, num2);
             cout << "Result: " << result << endl;
             break;
+        case'-';
+            result = sub(num1, num2);
+            cout << "Result: " << result << endl;
+            break;
         default:
             cout << "Unsupported operation." << endl;
             break;
@@ -21,5 +25,8 @@ int main() {
 
 int add(int x, int y) {
     return x + y;
+}
+int sub(int x, int y) {
+    return x - y;
 }
 
