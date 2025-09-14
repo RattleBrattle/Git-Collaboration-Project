@@ -12,7 +12,7 @@ int main() {
             result = add(num1, num2);
             cout << "Result: " << result << endl;
             break;
-        case'-';
+        case'-':
             result = sub(num1, num2);
             cout << "Result: " << result << endl;
             break;
