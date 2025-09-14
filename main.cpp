@@ -45,6 +45,10 @@ int sub(int x, int y) {
 int multiply(int a, int b) {
     return a * b;
 }
-int div(int a, int b) {
-    return a / b;
+int div(int x, int y) {
+    if (y == 0) {
+        cout << "Error: Division by zero!" << endl;
+        return 0;
+    }
+    return x / y;
 }
